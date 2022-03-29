@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<title>Example 3.2</title>
+	<script>
+		function getPay() {
+			var inputPay = parseFloat(prompt("What's the your hourly pay today?", "Enter hourly rate"));
+            var inputWorked = parseFloat(prompt("Whats your hours worked this week?", "Enter hours worked"));
+            var inputDependents = parseFloat(prompt("How many dependents do you have?", "Enter number"));
+			switch (true) {
+				case inputDependents = 0:
+                    
+					document.write("Bundle up! ");
+					break;
+				case temp > 0 && temp <= 32:
+					document.write("Pretty cold with a chance of snow!");
+					break;
+				case temp > 33 && temp <= 59:
+					document.write("Don't forget your jacket. It's still chilly outside.");
+					break;
+				case temp > 59 && temp <= 80:
+					document.write("Perfect lovely weather... unless it rains.");
+					break;
+				case temp > 80 && temp <= 95:
+					document.write("Nice and warm. Go for a swim.");
+					break;
+				case temp > 95:
+					document.write("It's really hot! Probably best to stay in an air conditioned spot.");
+					break;
+			}
+		}
+	</script>
+	</<head>
+
+<body>
+	<h1>What's the Weather?</h1>
+	<h3>Click the button! </h3>
+	<p><input type="button" id="pay" value="What is your net pay?" onclick="getPay();" /></p>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+  <title>Example 3.15</title>
+<script>
+function rateIt()
+{
+ 	var rate = parseInt(prompt("Rate the site from 1 to 10, with 10 as the best"," "));
+	var grade = " "
+	switch (rate)
+	{
+	 	case 10:
+			grade = "A";
+			document.write("<p>You gave the site a rating of " + grade + ".</p>");
+			break;
+		case 9:
+		case 8:
+		case 7:
+			 grade = "B";
+		 	 document.write("<p>You gave the site a rating of " + grade + ".</p>");
+			 break;
+		case 6:
+		case 5:
+		case 4:
+		 	grade = "C";
+			document.write("<p>You gave the site a rating of " + grade + ".</p>");
+			break;
+		case 3:
+		case 2:
+		case 1:
+			grade = "D";
+			document.write("<p>You gave the site a rating of " + grade + ".</p>");
+			break;
+		default:
+			   document.write("<p>Invalid entry</p>");
+	}
+}
+</script>
+</<head>
+<body>
+<table align ="center" width ="70%"><tr><td>
+<h1>&nbsp;</h2>
+<h1>Rate the Site</h1>
+<h3>Rate the site from 1 to 10, with 10 as the best ever and 1 as one of the worst</h3>
+<p><input type="button" id="rating" value="Enter your rating now" onclick="rateIt();" /></p>
+</td></tr></table></body>
+</html>
+

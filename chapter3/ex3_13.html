@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+  <title>Example 3.13</title>
+<script>
+function pageColor()
+{
+ 	var color = prompt("enter color ", " ");
+	switch (color) 
+	{
+	case "red":
+		 document.body.bgColor="red";
+  		 break;
+	case "green":
+  		 document.body.bgColor="green";
+  		 break;
+	case "blue":
+  		 document.body.bgColor="blue";
+  		 break;
+	case "yellow":
+  		 document.body.bgColor="yellow";
+  		 break;
+	case "lavender":
+  		 document.body.bgColor="lavender";
+  		 break;
+	default:
+  		document.write("Invalid entry");
+	}
+}
+</script>
+</<head>
+<body>
+<table align ="center" width ="70%"><tr><td>
+<h1>&nbsp;</h2>
+<h1>Change the page color</h1>
+<p>Select from red, blue, green, yellow, or lavender.</p>
+<p><input type="button" id="color" value="Enter a color" onclick="pageColor();" /></p>
+</td></tr></table></body>
+</html>
+

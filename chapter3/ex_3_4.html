@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+  <title>Example 3.4</title>
+<script>
+function getScore()
+  {
+	var basicScore = parseInt(prompt("What was the student's initial score?"," "));
+	var extraQuestion = prompt("Did the student do Q. 21 (yes or no)?"," ");
+	if (extraQuestion == "yes")
+		var points = parseInt(prompt("How many points did the student earn on Q. 21?"," "));
+	else
+		var points = parseInt(prompt("How many points did the student earn for a study guide?"," "));
+	var score = basicScore + points;
+	document.write("<h1>&nbsp;</h1>");
+	document.write("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>");
+	document.write("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The student's score, with any extra credit, is " + score + "%.</p>");
+}
+</script>
+</<head>
+<body>
+<table align ="center" width ="70%"><tr><td>
+<h1>&nbsp;</h2>
+<h1>Student Score</h1>
+<h3>Click the button! </h3>
+<p><input type="button" id="score" value="Enter the exam score?" onclick="getScore();" /></p>
+</td></tr></table></body>
+</html>
+

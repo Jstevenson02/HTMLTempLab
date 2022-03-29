@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>Example 3.2</title>
+	<script>
+		function getTemp() {
+			var temp = parseInt(prompt("What's the temperature today?", "degrees Fahrenheit"));
+			switch (true) {
+				case temp <= 0:
+					document.write("Bundle up! ");
+					break;
+				case temp > 0 && temp <= 32:
+					document.write("Pretty cold with a chance of snow!");
+					break;
+				case temp > 33 && temp <= 59:
+					document.write("Don't forget your jacket. It's still chilly outside.");
+					break;
+				case temp > 59 && temp <= 80:
+					document.write("Perfect lovely weather... unless it rains.");
+					break;
+				case temp > 80 && temp <= 95:
+					document.write("Nice and warm. Go for a swim.");
+					break;
+				case temp > 95:
+					document.write("It's really hot! Probably best to stay in an air conditioned spot.");
+					break;
+			}
+		}
+	</script>
+	</<head>
+
+<body>
+	<h1>What's the Weather?</h1>
+	<h3>Click the button! </h3>
+	<p><input type="button" id="temperature" value="What is today's temperature?" onclick="getTemp();" /></p>
+</body>
+
+</html>

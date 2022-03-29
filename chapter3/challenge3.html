@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<title>Example 3.2</title>
+	<script>
+		function getGrade() {
+			var temp = parseInt(prompt("What is your average score?", "Enter score #"));
+			switch (true) {
+				case temp <= 60:
+					document.write("F");
+					break;
+				case temp > 60 && temp <= 69.5:
+					document.write("D");
+					break;
+				case temp > 69.6 && temp <= 79.5:
+					document.write("C");
+					break;
+				case temp > 79.6 && temp <= 89.5:
+					document.write("B");
+					break;
+				case temp > 89.5:
+					document.write("A");
+					break;
+			}
+		}
+	</script>
+	</<head>
+
+<body>
+	<h1>What's your letter grade?</h1>
+	<h3>Click the button! </h3>
+	<p><input type="button" id="grade" value="What is your letter grade?" onclick="getGrade();" /></p>
+</body>
+
+</html>

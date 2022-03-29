@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<title>Example 3.1</title>
+	<script>
+		function getTemp() {
+
+			var promptInput = prompt("Do you want to convert Celcius to Fahrenheit?");
+			let normalInput = promptInput.toLowerCase();
+			if (normalInput == "yes") {
+				var celcius = parseInt(prompt("Enter degrees Celcius: "));
+				var fahrenheit = (celcius * 9 / 5 + 32);
+				document.write("<h1>Celcius: " + celcius + " in Fahrenheit: " + fahrenheit + "</h1>");
+			}
+			else {
+				var promptInput = prompt("So you want to convert Fahrenheit to Celcius?");
+				var fahrenheit = parseInt(prompt("Enter degrees in Fahrenheit: "))
+				var celcius = 5 / 9 * (fahrenheit - 32);
+				document.write("<h1>Fahrenheit: " + fahrenheit + " in Celcius: " + celcius + "</h1>")
+			}
+		}
+	</script>
+	</<head>
+
+<body>
+	<h1>What's the Weather?</h1>
+	<h3>Click the button! </h3>
+	<p><input type="button" id="temperature" value="What is today's temperature?" onclick="getTemp();" /></p>
+</body>
+
+</html>

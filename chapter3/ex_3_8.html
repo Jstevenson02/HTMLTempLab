@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+  <title>Example 3.8</title>
+<script>
+function shipCost()
+{
+ 	var coupon = prompt("Enter a coupon code if you have one: ", " ");
+	var price = parseInt(prompt("What is your merchandise total?"," "));
+	if (price > 1.00 && price < 25.00)
+		var ship = 5.00;
+	if (price >= 25.00 && price < 50.00)
+		var ship = 7.00;
+	if (price >= 50.00 && price < 75.00)
+		var ship = 9.00;
+	if (price >= 75.00 && price < 100.00)
+		var ship = 10.00;
+	if (price >= 100.00 || coupon == "FREESHIP")
+	   var ship = 0.00;
+   document.write("<p>Your shipping cost will be $ " + ship + ".</p>");
+}
+</script>
+</<head>
+<body>
+<table align ="center" width ="70%"><tr><td>
+<h1>&nbsp;</h2>
+<h1>Calculating Shipping Costs</h1>
+<h3>Click the button to calculate your shipping cost</h3>
+<p><input type="button" id="ship" value="calculate your shipping charge" onclick="shipCost();" /></p>
+</td></tr></table></body>
+</html>
+

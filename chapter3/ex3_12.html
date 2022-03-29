@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+  <title>Example 3.12</title>
+<script>
+function fightTroll()
+{
+ 	var trollPoints = 50;
+	var points = parseInt(prompt("How many points do you have?"," "));
+	if (points < trollPoints)
+	{
+	   var gun = prompt("Do you have a gun? (y/n)" , " ");
+	   if (gun == "n")
+	   	  var sword = prompt("Do you have a sword? (y/n)" , " ");
+	 	if (gun == "n" && sword == "n")
+		   var wings = prompt("Do you have wings? (y/n)" , " ");
+		if (wings == "n" && sword == "n" && gun == "n")
+	   	   var dust = prompt("Do you have flying dust? (y/n)" , " ");
+		if 	(wings == "n" && sword == "n" && gun == "n" && dust == "n")
+		     {
+			 	document.write("<h3>You lose... so sad</h3>");
+				document.write("<img src = 'troll.jpg' />");
+			 }
+		else if (gun == 'y' || sword == 'y')
+		{
+		document.write("<h3>You are the winner!</h3>");
+		document.write("<img src = 'victor.jpg' />");
+		}
+	 	else if (dust == 'y' || wings == 'y')
+		{
+			 document.write("<h3>You can fly away. The battle is a tie.</h3>");
+			 document.write("<img src = 'flyaway.jpg' />");
+		}
+			
+	}
+		else
+		{
+		 	if (points == trollPoints)
+			{
+			   document.write("<h3>It's a tie.</h3>");
+			document.write("<img src = 'victor.jpg' />");
+			document.write("<img src = 'troll.jpg' />");
+			}
+			else
+			{
+		 	document.write("<h3>You are the winner!</h3>");
+			document.write("<img src = 'victor.jpg' />");
+			}
+		}
+}
+</script>
+</<head>
+<body>
+<table align ="center" width ="70%"><tr><td>
+<h1>&nbsp;</h2>
+<h1>Battle With the Troll!</h1>
+<p><input type="button" id="battle" value="Push here to begin the battle" onclick="fightTroll();" /></p>
+</td></tr></table></body>
+
+</html>
+
